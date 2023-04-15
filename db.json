@@ -1,0 +1,36 @@
+{
+    "books":[
+        {
+            "id": 1,
+            "title": "IMAGINE ME GONE",
+            "author": "ADAM HASLETT",
+            "genre": "Fiction",
+            "pages": 300,
+            "image": "https://cdn.penguin.co.uk/dam-assets/books/9780241972885/9780241972885-jacket-large.jpg"
+        },
+        {
+            "id": 2,
+            "title": "CREATING ANNE RENINA",
+            "author": "BOB BLAISDELL",
+            "genre": "Fiction",
+            "pages": 300,
+            "image": "https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781643134628/creating-anna-karenina-9781643134628_hr.jpg"
+        },
+        {
+            "id": 3,
+            "title": "A LITTLE LIFE",
+            "author": "HANYA YANAGIHARA",
+            "genre": "Fiction",
+            "pages": 300,
+            "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1446469353i/22822858.jpg"
+        },
+        {
+            "id": 4,
+            "title": "The Life of the Mind",
+            "author": "HCHRISTINE SMALLWOOD",
+            "genre": "Fiction",
+            "pages": 300,
+            "image": "https://static01.nyt.com/images/2021/03/16/books/review/15BOOKSMALLWOOD1/15BOOKSMALLWOOD1-articleLarge.png?quality=75&auto=webp&disable=upscale"
+        }
+    ]  
+}
