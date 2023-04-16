@@ -1,42 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
 body{
     margin: 0px;
     padding: 0px;
     text-decoration: none;
     background: gray;
+    font-family: "poppins", sans-serif;
 }
 nav{
     width: 100%;
+    height: 80px;
     background: rgb(82, 51, 51);
-    overflow: auto;
+    /* overflow: auto; */
 }
+ label.logo{
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(180, 183, 194);
+    padding: 0 100px;;
+    line-height: 80px;
+} 
 ul{
     padding: 0;
     margin: 0 0 0 150px;
     list-style: none;
+    float: right;
 }
 li{
     float: left;
 }
 .logo img{
-    width:90px;
+    width: 40px;
     margin-right: 10px;
+}
+.logo{
+    flex: 1;
+}
+.logo a{
+    display:flex;
+    align-items: center;
+    font-size: 20px;
+}
+.logo a :hover{
+    color: #ddd5;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu li{
+    padding: 15px 10px;
+    font-size: 16px;
 }
 nav a{
     width: 100;
     display: block;
-    text-transform: uppercase;
     border: 1px solid transparent;
     padding: 7px 10px;
     border-radius: 3px;
     text-decoration: none;
     font-family: sans-serif;
     color: #ccc;
-    text-align: center;
+    text-align:center;
 }
 nav a:hover {
   border: 1px solid rgb(139, 57, 57);
+  text-transform: uppercase;
+  color:rgb(0, 0, 0);
     transition: 0.4s; 
 }
+.lower-bar{
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background: #cf392e;
+}
+.lower-bar span{
+    color: #fefe;
+}
+.lower-bar li{
+    margin: 0px 5px;
+}
+.lower-bar a{
+    color: #cdcdcd;
+}
+.lower-bar a:hover{
+    color:#333;
+}
+#myBook{
+    height:31rem;    
+    margin-top: 25px;
+    padding-left: 300px;
+    
+}
+@media screen and (max-width: 600px) {
+    nav{
+        display: block;
+        position: relative;
+        padding: 15px 20px;
+    }
+.menu{
+    margin-top: 15px;
+    display: none;
+}
+.menu.active, .toggle{
+    display: block;
+}
+.toggle{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #a85f5f;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    background-color: #703808;
+    color:rgb(197, 169, 169);
+  }
+  
+  .modal-body {padding: 2px 16px;}
+  
+  .modal-footer {
+    padding: 2px 16px;
+    background-color: #703808;
+    color: rgb(197, 169, 169);
+  }
 .editor{
     display: grid;
     place-items: center;

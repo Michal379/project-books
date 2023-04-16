@@ -6,20 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PROJECT BOOKS</title>
     <link rel="stylesheet" href="index.css">
-</head>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
 <body>
         <nav>
-            <label class="logo">BooksB</label>
+            <label class="logo">BooksCorner</label>
             <ul>
                 <li>
-                    <div class="logo"><a href ="#"><img src = "books/open-book-with-blue-hardcover_23-2148213866.avif"></a></div>
+                    <div class="logo">
+                        <a href="#"></a><img src="books/f4042511a03592f5770ea5a10e03bef7.jpg" alt="logo"></a>
+                    </div>
+                    <div class="toggle">
+                        <a href="#"><ion-icon name="menu"></ion-icon></a>
+                    </div>
+
+                    <!-- <div class="logo"><a href ="#"><img src = "books/open-book-with-blue-hardcover_23-2148213866.avif"></a></div> -->
                 </li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Search</a></li>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Books</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>  
-        </nav>
+                <li><a href="#">Log in</a></li>
+            </ul> 
+          </nav>
+         <div class="lower-bar">
+            <span><ion-icon name="call"></ion-icon>379 000 542</span>
+            <ul>
+                <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            </ul>
+         </div>
+         <img id="myBook" src="https://media.architecturaldigest.com/photos/57f2d789c23fd94674c5706f/master/w_1280,c_limit/9780425266267%20(1).jpg">
+
+
         <div class="editor">
             <h2>Editors choice</h2>
             <div class="editors__choice"></div>
@@ -32,9 +51,32 @@
             <h2>Children's corner</h2>
             <div class="children__corner"></div>
         </div>
+        <button id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Hello lovely book</p>
+      <p>Book id 1 </p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div>
+  </div>
+
+</div>
+
+
        
         
-
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
  <script src="index.js"></script>   
 </body>
 </html>
